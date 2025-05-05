@@ -1,0 +1,191 @@
+/* General Layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: #f0e6d2;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Title */
+h1 {
+  color: #C89B3C;
+  font-family: 'Beaufort for LOL', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Controls */
+.controls {
+  margin-bottom: 1rem;
+}
+
+button,
+select,
+#searchInput {
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#randomBtn {
+  background-color: #C89B3C;
+  color: #010A13;
+}
+
+#searchInput {
+  background-color: #F0E6D2;
+  color: #010A13;
+}
+
+#roleFilter {
+  background-color: #A09B8C;
+  color: #010A13;
+}
+
+/* Card Container */
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Card Style */
+.card {
+  width: 256px;
+  height: 480px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #1c1c1c;
+  border: 2px solid #c89b3c;
+}
+
+/* Front */
+.card-front {
+  z-index: 2;
+}
+
+.portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 0;
+  background: linear-gradient(to top, rgba(1, 10, 19, 0.9), transparent);
+  z-index: 2;
+}
+
+.card-footer h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-family: 'Beaufort for LOL', serif;
+  color: #f0e6d2;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.card-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #a09b8c;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.top-icons {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 8px;
+  z-index: 3;
+}
+
+.top-icons img {
+  width: 32px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 4px;
+  border-radius: 4px;
+}
+
+/* Back */
+.card-back {
+  transform: rotateY(180deg);
+  padding: 1rem;
+  text-align: left;
+  overflow-y: auto;
+}
+
+#searchToggleBtn {
+  background-color: #0AC8B9;
+  color: #010A13;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#searchToggleBtn:hover {
+  background-color: #0AB6A9;
+}
+
+#searchInput {
+  background-color: #c89b3c; /* LoL Beige */
+  color: #010A13;            /* Fast Schwarz */
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  margin: 0.25rem;
+  width: 240px;
+  outline: none;
+  display: inline-block;
+}
+
+#searchInput::placeholder {
+  color: #7e7364; /* leicht grauer Placeholder */
+}

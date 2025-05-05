@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Piltover Prints - Vanilla JS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="page">
+  <h1>Piltover Prints</h1>
+
+  <div class="controls">
+    <button id="randomBtn">Random</button>
+    <button id="searchToggleBtn">Search</button>
+    <input id="searchInput" list="championList" placeholder="Search..." style="display: none;" />
+    <datalist id="championList"></datalist>
+    <datalist id="championList"></datalist>
+    <select id="roleFilter">
+      <option value="">All Roles</option>
+      <option value="Fighter">Fighter</option>
+      <option value="Mage">Mage</option>
+      <option value="Tank">Tank</option>
+      <option value="Assassin">Assassin</option>
+      <option value="Marksman">Marksman</option>
+      <option value="Support">Support</option>
+    </select>
+  </div>
+
+  <div id="card-container"></div>
+  <script src="main.js"></script>
+</body>
+</html>
