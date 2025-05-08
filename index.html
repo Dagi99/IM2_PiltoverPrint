@@ -15,18 +15,22 @@
     <input id="searchInput" list="championList" placeholder="Search..." style="display: none;" />
     <datalist id="championList"></datalist>
     <datalist id="championList"></datalist>
-    <select id="roleFilter">
-      <option value="">All Roles</option>
-      <option value="Fighter">Fighter</option>
-      <option value="Mage">Mage</option>
-      <option value="Tank">Tank</option>
-      <option value="Assassin">Assassin</option>
-      <option value="Marksman">Marksman</option>
-      <option value="Support">Support</option>
-    </select>
+    <div class="custom-dropdown" id="roleDropdown">
+      <div class="dropdown-selected" id="dropdownSelected">Filter by Role</div>
+      <ul class="dropdown-options" id="dropdownOptions">
+        <li data-role="">All</li>
+        <li data-role="Fighter">Fighter</li>
+        <li data-role="Mage">Mage</li>
+        <li data-role="Tank">Tank</li>
+        <li data-role="Assassin">Assassin</li>
+        <li data-role="Marksman">Marksman</li>
+        <li data-role="Support">Support</li>
+      </ul>
+    </div>
+    
   </div>
 
   <div id="card-container"></div>
-  <script src="main.js"></script>
+  <script src="main.js" ></script>
 </body>
 </html>

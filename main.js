@@ -85,6 +85,8 @@ function populateSearchList(list) {
   });
 }
 
+
+
 getEl("randomBtn").addEventListener("click", showRandomChampion);
 
 getEl("searchInput").addEventListener("input", async (e) => {
@@ -112,28 +114,41 @@ getEl("searchInput").addEventListener("input", async (e) => {
   }
 });
 
-getEl("roleFilter").addEventListener("change", async (e) => {
-  const role = e.target.value;
+const dropdownSelected = getEl("dropdownSelected");
+const dropdownOptions = getEl("dropdownOptions");
 
-  if (!role) {
-    filteredChampions = [];
-    populateSearchList(championList);
-    showRandomChampion();
-    return;
-  }
-
-  filteredChampions = championList.filter(c => c.tags.includes(role));
-  populateSearchList(filteredChampions);
-  
-  cardContainer.innerHTML = "";
-  for (const champ of filteredChampions) {
-    const full = await fetchChampionDetails(champ.id);
-    const card = createCard(full);
-    cardContainer.appendChild(card);
-  }
-
-  setBackgroundImage("https://raw.communitydragon.org/latest/game/assets/ux/loadingscreen/srbackground.png");
+dropdownSelected.addEventListener("click", () => {
+  dropdownOptions.style.display = dropdownOptions.style.display === "block" ? "none" : "block";
 });
+
+dropdownOptions.addEventListener("click", async (e) => {
+  if (e.target.tagName === "LI") {
+    const role = e.target.dataset.role;
+    dropdownOptions.style.display = "none";
+    dropdownSelected.textContent = role ? role : "Filter by Role";
+
+    // Update filter logic
+    if (!role) {
+      filteredChampions = [];
+      populateSearchList(championList);
+      showRandomChampion();
+      return;
+    }
+
+    filteredChampions = championList.filter(c => c.tags.includes(role));
+    populateSearchList(filteredChampions);
+    
+    cardContainer.innerHTML = "";
+    for (const champ of filteredChampions) {
+      const full = await fetchChampionDetails(champ.id);
+      const card = createCard(full);
+      cardContainer.appendChild(card);
+    }
+
+    setBackgroundImage("https://raw.communitydragon.org/latest/game/assets/ux/loadingscreen/srbackground.png");
+  }
+});
+
 
 getEl("searchToggleBtn").addEventListener("click", () => {
   const input = getEl("searchInput");
