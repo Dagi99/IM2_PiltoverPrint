@@ -44,7 +44,8 @@ select,
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-family: 'Beaufort for LOL', serif;
+  font-family: 'Spiegel Bold', sans-serif;
+  font-size: 16px;
 }
 
 #randomBtn {
@@ -227,7 +228,7 @@ select,
 .custom-dropdown {
   position: relative;
   display: inline-block;
-  font-family: 'Beaufort for LOL', serif;
+  font-family: 'Spiegel Bold', sans-serif;
   margin: 0.25rem;
 }
 
@@ -243,6 +244,7 @@ select,
   height: 42px;
   min-width: 140px;
   box-sizing: border-box;
+  align-content: center;
 }
 
 .dropdown-options {
