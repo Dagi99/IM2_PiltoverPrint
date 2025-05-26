@@ -51,10 +51,25 @@ select,
 #searchInput {
   background-color: #F0E6D2;
   color: #010A13;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  margin: 0.25rem;
+  width: 240px; /* Adjust width as needed */
+  height: 42px; /* Explicitly set height to match other buttons */
+  outline: none;
+  display: inline-block;
+  box-sizing: border-box; /* Ensure padding doesn't affect height */
 }
 
+#searchInput:focus {
+  height: 42px; /* Ensure height remains consistent when focused */
+}
+ 
+
 #roleFilter {
-  background-color: #A09B8C;
+  background-color: #C89B3C;
   color: #010A13;
 }
 
