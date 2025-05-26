@@ -31,7 +31,6 @@ h1 {
   gap: 1rem; /* Add spacing between buttons */
   margin: 0; /* Remove any default margin */
   padding-bottom: 20px;
-  margin-bottom: 1.5rem;
 }
 
 button,
@@ -62,12 +61,13 @@ select,
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 5px;
-  margin: 0.25rem;
+  margin-bottom: 20px;
   width: 240px; /* Adjust width as needed */
   height: 42px; /* Explicitly set height to match other buttons */
   outline: none;
   display: inline-block;
   box-sizing: border-box; /* Ensure padding doesn't affect height */
+
 }
 
 #searchInput:focus {
@@ -242,7 +242,6 @@ select,
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 5px;
-  margin: 0.25rem;
   width: 240px;
   height: 35px;
   outline: none;

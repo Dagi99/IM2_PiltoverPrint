@@ -12,9 +12,6 @@
   <div class="controls">
     <button id="randomBtn">Random</button>
     <button id="searchToggleBtn">Search</button>
-    <input id="searchInput" list="championList" placeholder="Search..." style="display: none;" />
-    <datalist id="championList"></datalist>
-    <datalist id="championList"></datalist>
     <div class="custom-dropdown" id="roleDropdown">
       <div class="dropdown-selected" id="dropdownSelected">Filter by Role</div>
       <ul class="dropdown-options" id="dropdownOptions">
@@ -27,8 +24,10 @@
         <li data-role="Support">Support</li>
       </ul>
     </div>
-    
   </div>
+  <input id="searchInput" list="championList" placeholder="Search..." style="display: none;" />
+    <datalist id="championList"></datalist>
+    <datalist id="championList"></datalist>
 
   <div id="card-container"></div>
   <script src="main.js" ></script>
