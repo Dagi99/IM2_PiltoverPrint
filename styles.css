@@ -307,4 +307,15 @@ select,
   color: #010A13;
 }
 
+@media (max-width: 550px) {
+  .controls {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+    gap: 1rem; /* Add spacing between buttons */
+  }
 
+  h1 {
+    font-size: 4rem; /* Make the title smaller */
+  }
+
+}
