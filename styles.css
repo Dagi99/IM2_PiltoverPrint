@@ -3,6 +3,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow: auto; /* Allow scrolling only when content overflows */
 }
 
 body {
@@ -14,13 +15,14 @@ body {
   color: #f0e6d2;
   text-align: center;
   padding: 1rem;
+  box-sizing: border-box; /* Ensure padding doesn't affect layout */
 }
 
 /* Title */
 h1 {
   color: #C89B3C;
   font-family: 'Beaufort for LOL', serif;
-  font-size: 5rem;
+  font-size: 5.3rem;
   margin-bottom: 1.5rem;
 }
 
@@ -307,7 +309,7 @@ select,
   color: #010A13;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 560px) {
   .controls {
     flex-direction: column; /* Stack buttons vertically */
     align-items: center; /* Center buttons horizontally */
@@ -317,5 +319,10 @@ select,
   h1 {
     font-size: 4rem; /* Make the title smaller */
   }
+}
 
+@media (max-width: 430px) {
+  h1 {
+    font-size: 3rem; /* Make the title smaller */
+  }
 }
