@@ -26,7 +26,11 @@ h1 {
 
 /* Controls */
 .controls {
-  margin-bottom: 1rem;
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center buttons horizontally */
+  gap: 1rem; /* Add spacing between buttons */
+  margin: 0; /* Remove any default margin */
+  padding-bottom: 20px;
 }
 
 button,
@@ -224,7 +228,6 @@ select,
   position: relative;
   display: inline-block;
   font-family: 'Beaufort for LOL', serif;
-  padding: 0.5rem;
   margin: 0.25rem;
 }
 
