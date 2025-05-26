@@ -196,6 +196,7 @@ select,
   border-radius: 5px;
   margin: 0.25rem;
   width: 240px;
+  height: 35px;
   outline: none;
   display: inline-block;
 }
