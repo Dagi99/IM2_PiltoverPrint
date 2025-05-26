@@ -16,6 +16,8 @@ body {
   text-align: center;
   padding: 1rem;
   box-sizing: border-box; /* Ensure padding doesn't affect layout */
+  backdrop-filter: blur(3px); /* Apply a slight blur effect */
+  -webkit-backdrop-filter: blur(3px); /* For Safari support */
 }
 
 /* Title */
@@ -25,6 +27,22 @@ h1 {
   font-size: 5.3rem;
   margin-bottom: 1.5rem;
 }
+
+.title-wrapper {
+  text-align: center;
+  width: 100%;
+}
+
+#typing-title {
+  font-size: 5.3rem;
+  font-family: 'Beaufort for LOL', serif;
+  color: #C89B3C;
+  white-space: nowrap;
+  border-right: 2px solid #C89B3C;
+  display: inline-block;
+  overflow: hidden;
+}
+
 
 /* Controls */
 .controls {
@@ -50,39 +68,24 @@ select,
   font-size: 16px;
 }
 
+
 #randomBtn {
   background-color: #C89B3C;
   color: #010A13;
 }
 
-
-#searchInput {
-  background-color: #F0E6D2;
-  color: #010A13;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  width: 240px; /* Adjust width as needed */
-  height: 42px; /* Explicitly set height to match other buttons */
-  outline: none;
-  display: inline-block;
-  box-sizing: border-box; /* Ensure padding doesn't affect height */
-
+#randomBtn:hover {
+  background-color: #95742d; /* Gold color */
+  color: #010A13; /* Dark text */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
-#searchInput:focus {
-  height: 42px; /* Ensure height remains consistent when focused */
-}
  
 
 #roleFilter {
   background-color: #C89B3C;
   color: #010A13;
 }
-
-
 
 /* Card Container */
 #card-container {
@@ -234,25 +237,34 @@ select,
 }
 
 #searchToggleBtn:hover {
-  background-color: #0AB6A9;
+  background-color: #09a699;
 }
 
 #searchInput {
-  background-color: #c89b3c; /* LoL Beige */
-  color: #010A13;            /* Fast Schwarz */
+  background-color: #0AC8B9;
+  color: #ffffff;
   font-weight: bold;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 5px;
-  width: 240px;
-  height: 35px;
+  margin-bottom: 20px;
+  width: 256px; /* Adjust width as needed */
+  height: 42px; /* Explicitly set height to match other buttons */
   outline: none;
   display: inline-block;
+  box-sizing: border-box; /* Ensure padding doesn't affect height */
+
+}
+
+#searchInput:focus {
+  height: 42px; /* Ensure height remains consistent when focused */
+  width: 256px;
 }
 
 #searchInput::placeholder {
-  color: #7e7364; /* leicht grauer Placeholder */
+  color: #000000; /* Light gray color for the placeholder text */
 }
+
 
 .custom-dropdown {
   position: relative;
@@ -274,6 +286,12 @@ select,
   min-width: 140px;
   box-sizing: border-box;
   align-content: center;
+}
+
+.dropdown-selected:hover {
+  background-color: #747166; /* Gold color */
+  color: #010A13; /* Dark text */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
 .dropdown-options {
@@ -316,13 +334,13 @@ select,
     gap: 1rem; /* Add spacing between buttons */
   }
 
-  h1 {
+  #typing-title {
     font-size: 4rem; /* Make the title smaller */
   }
 }
 
 @media (max-width: 430px) {
-  h1 {
+  #typing-title {
     font-size: 3rem; /* Make the title smaller */
   }
 }

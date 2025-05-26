@@ -61,6 +61,23 @@ function createCard(champion) {
   return card;
 }
 
+const text = "Piltover Prints";
+const titleElement = document.getElementById("typing-title");
+let index = 0;
+
+function typeNextChar() {
+  if (index < text.length) {
+    titleElement.textContent += text.charAt(index);
+    index++;
+    setTimeout(typeNextChar, 120); // Typing speed (ms)
+  } else {
+    // Optional: Stop blinking cursor or change style
+    titleElement.style.borderRight = "none";
+  }
+}
+
+typeNextChar();
+
 function renderChampion(champion) {
   cardContainer.innerHTML = "";
   cardContainer.appendChild(createCard(champion));
