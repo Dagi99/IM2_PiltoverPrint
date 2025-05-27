@@ -7,9 +7,9 @@ In diesem Projekt wurde eine interaktive Website entwickelt, die League of Legen
 
 ## Learnings und Schwierigkeiten
 
-**Danino Giger**  
+### Danino Giger
+
 Ich habe noch mehr zu DOM-Elemente gelernt und wie man es dynamisch anpassen kann. Die grösste Herausforderung war beim Design der Seite mit den Buttons und den Karten.
----
 
 ## 🔹 Benutzte Ressourcen
 
