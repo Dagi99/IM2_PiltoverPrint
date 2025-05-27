@@ -1,10 +1,9 @@
----
+
 
 ## Kurzbeschreibung des Projekts
 
 In diesem Projekt wurde eine interaktive Website entwickelt, die League of Legends Champions im Stil von Sammelkarten darstellt. Die Seite nutzt die offizielle Riot API, um aktuelle Championdaten dynamisch zu laden. Features wie ein Rollensystem, Zufallsauswahl, Suchfunktion, Kartenrotation sowie dynamischer Hintergrund sorgen für eine immersive, benutzerfreundliche Präsentation im Stil von Magic: The Gathering.
 
----
 
 ## Learnings und Schwierigkeiten
 
