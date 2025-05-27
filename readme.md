@@ -11,6 +11,10 @@ In diesem Projekt wurde eine interaktive Website entwickelt, die League of Legen
 
 Ich habe noch mehr zu DOM-Elemente gelernt und wie man es dynamisch anpassen kann. Die grösste Herausforderung war beim Design der Seite mit den Buttons und den Karten.
 
+### Fadri Collet
+
+Ich habe gelernt, wie man den Aufbau einer Website strukturiert plant und gestaltet. Die grösste Herausforderung war es, ein klares Layout mit sinnvoller Benutzerführung umzusetzen.
+
 ## 🔹 Benutzte Ressourcen
 
 - [Riot DataDragon API](https://ddragon.leagueoflegends.com/)
