@@ -1,7 +1,3 @@
-# League of Legends Champion Cards
-
-Eine interaktive Website, die League of Legends Champions im Stil von Sammelkarten darstellt – inklusive Rotation, Suche, Filter und Zufallsauswahl. Die Karten basieren auf Live-Daten der Riot Games API und sind visuell an Magic: The Gathering und Riot's Markenstil angelehnt.
-
 ---
 
 ## Kurzbeschreibung des Projekts
