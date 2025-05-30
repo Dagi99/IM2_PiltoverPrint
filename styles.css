@@ -162,6 +162,7 @@ select,
   overflow-y: scroll;
   scrollbar-color: #c89b3c #1c1c1c;
   scrollbar-width: thin;
+  z-index: 1;
 }
 /* Front */
 .card-front {
